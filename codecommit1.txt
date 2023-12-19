@@ -1,0 +1,33 @@
+connect VS code to Code commit repository :
+To connect VS code to Code commit repository, you need to follow these steps: 
+
+Create an AWS CodeCommit repository on AWS and give it a name and description. You can do this by going to AWS management console > Service > Developer Tools >CodeCommit and clicking on Create Repository1. 
+
+Create a user on AWS with the AWSCodeCommitPowerUser policy attached. You can do this by going to services > Identity and Access Management (IAM) > Users and clicking on Add user. Then, enter a user name, password, and select the AWSCodeCommitPowerUser policy from the Attach existing policies directly tab1. 
+
+Generate HTTPS Git credentials for the user and download the credential file. You can do this by going to services > Identity and Access Management (IAM) > Users and clicking on the user you created. Then, click on the Security Credentials tab and click on Generate Credentials button under HTTPS Git credentials for AWS CodeCommit section1. 
+
+Open VS code and configure Git with your user name and email. You can do this by opening VS code and clicking on Terminal > New Terminal and entering the following commands: 
+
+git config --global user.name "Your Name"git config --global user.email test@example.com 
+ 
+
+Copy 
+
+Initialize a local Git repository in VS code. You can do this by typing git init in the terminal window1. 
+
+Add the files to the local Git repository. You can do this by typing git add --all in the terminal window1. 
+
+Commit the files to the local Git repository. You can do this by typing git commit -m "<commit comment>" in the terminal window12. 
+
+Connect the local Git repository to the AWS CodeCommit repository. You can do this by typing git remote add origin <Link to AWS CodeCommit Repo> in the terminal window. You can find the link to the AWS CodeCommit repo by going to AWS management console > Service > Developer Tools >CodeCommit and clicking on the repo you created. Then, copy the HTTPS clone URL from the Clone URL section1. 
+
+Push the files from the local Git repository to the AWS CodeCommit repository. You can do this by typing git push -u origin master in the terminal window12. You will be prompted to enter your user name and password from the credential file you downloaded earlier. 
+
+I hope this helps you connect VS code to Code commit repository. If you have any questions, please let me know. 😊 
+
+ 
+
+From <https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelstable,wincopilot,&shellsig=4d259bc64452a4ebefefce4e4320ccc289cddf59&setlang=en-US&lightschemeovr=1>  
+
+ 

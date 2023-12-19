@@ -1,0 +1,46 @@
+Git Configuration.... 
+
+git config user.email "you@example.com" 
+
+git config user.name "Your Name" 
+
+ 
+
+Initialize Git in the local repo: git init 
+
+Add files to commit: git add "file name"  
+
+Add all files to commit: git add . 
+
+Commit changes: git commit -m "first commit" 
+ 
+
+perform to add remote repo for the code repo: 
+
+git remote add origin "repo URL" 
+git remote set-url origin "repo URL" 
+ 
+
+perform push: git push -u origin master 
+
+ 
+
+check existing remotes: git remote -v 
+
+ 
+
+ 
+
+In order to clear the local repo after deleting some branches refresh git: 
+
+ 
+
+git fetch --prune origin 
+
+git remote update origin --prune 
+
+ 
+
+ 
+
+git config --global credential.httpusepath true 
